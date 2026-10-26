@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Совершенный образ — парфюмерия и косметика · ТЦ «Бульвар», Крылатское</title>
+<meta name="description" content="«Совершенный образ» — всё самое лучшее в одном месте: селективная парфюмерия на розлив, корейская косметика, профессиональные краски и уход для волос. Москва, Осенний бульвар, 10, ТЦ «Бульвар», 10 метров от м. Крылатское. Рейтинг 4,6.">
+<!-- Превью ссылки в мессенджерах. При переезде на свой домен — заменить адрес в og:url и og:image -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Совершенный образ">
+<meta property="og:title" content="Совершенный образ — всё самое лучшее в одном месте">
+<meta property="og:description" content="Селективная парфюмерия на розлив, корейская косметика, профессиональные краски и уход для волос. ТЦ «Бульвар», 10 метров от м. Крылатское, ежедневно 10:00–21:00.">
+<meta property="og:url" content="https://soversheniy-obraz.netlify.app/">
+<meta property="og:image" content="https://soversheniy-obraz.netlify.app/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 30'%3E%3Cpath d='M2 2h30L17 28 2 2Z' fill='%23faf8f4' stroke='%2316130f' stroke-width='2.4' stroke-linejoin='round'/%3E%3Cpath d='M11 9h12l-6 10.5L11 9Z' fill='%2396742f'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Store","name":"Совершенный образ",
+ "slogan":"Всё самое лучшее в одном месте",
+ "description":"Магазин парфюмерии и косметики: селективная парфюмерия на розлив, корейская косметика, профессиональные краски и уход для волос.",
+ "url":"https://soversheniy-obraz.netlify.app/","telephone":"+7 906 084-61-71",
+ "address":{"@type":"PostalAddress","streetAddress":"Осенний бульвар, 10, ТЦ «Бульвар», 1 этаж","addressLocality":"Москва","addressCountry":"RU"},
+ "geo":{"@type":"GeoCoordinates","latitude":55.7578,"longitude":37.4091},
+ "openingHours":"Mo-Su 10:00-21:00"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#faf8f4;
+  --paper2:#f3efe8;
+  --ink:#16130f;
+  --ink-soft:#6d655a;
+  --line:rgba(22,19,15,.14);
+  --line-strong:rgba(22,19,15,.32);
+  --bronze:#96742f;
+  --bronze-soft:#c9b078;
+  --serif:'Cormorant Garamond',serif;
+  --sans:'Manrope',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;font-weight:400}
+img{max-width:100%;display:block}
+::selection{background:var(--ink);color:var(--paper)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.12}
+
+/* ── Верхняя лента ─────────────────────────────────── */
+.topline{
+  display:flex;justify-content:space-between;gap:24px;align-items:center;
+  padding:9px 48px;border-bottom:1px solid var(--line);
+  font-size:12px;letter-spacing:.08em;color:var(--ink-soft);
+  background:var(--paper);position:relative;z-index:901;
+}
+.topline a{color:var(--ink);text-decoration:none;font-weight:600}
+.topline a:hover{color:var(--bronze)}
+.topline .tl-item{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.topline svg{color:var(--bronze);flex:none}
+
+/* ── Навигация ─────────────────────────────────────── */
+nav{
+  position:sticky;top:0;z-index:900;background:rgba(250,248,244,.97);
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  padding:18px 48px;border-bottom:1px solid var(--line);transition:padding .3s;
+}
+nav.scrolled{padding:12px 48px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink)}
+.brand .tri{flex:none;color:var(--ink)}
+.brand .nm{font-family:var(--serif);font-size:19px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;line-height:1.2}
+.brand .nm small{display:block;font-family:var(--sans);font-size:9.5px;font-weight:500;letter-spacing:.34em;color:var(--ink-soft);text-transform:uppercase}
+nav ul{display:flex;gap:34px;list-style:none}
+nav ul a{
+  color:var(--ink-soft);text-decoration:none;font-size:12.5px;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;padding:6px 0;position:relative;transition:color .2s;
+}
+nav ul a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--bronze);transition:width .25s}
+nav ul a:hover,nav ul a.active{color:var(--ink)}
+nav ul a:hover::after,nav ul a.active::after{width:100%}
+nav ul a:focus-visible{outline:2px solid var(--bronze);outline-offset:4px}
+.nav-cta{display:flex;align-items:center;gap:18px}
+
+/* ── Кнопки ────────────────────────────────────────── */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;cursor:pointer;
+  text-decoration:none;font-family:var(--sans);font-weight:600;font-size:12.5px;
+  letter-spacing:.2em;text-transform:uppercase;padding:15px 34px;
+  border:1px solid var(--ink);color:var(--ink);background:transparent;
+  transition:background .25s,color .25s,border-color .25s;
+}
+.btn.dark{background:var(--ink);color:var(--paper)}
+@media(hover:hover){ /* на телефоне hover «залипает» после касания — там он не нужен */
+  .btn:hover{background:var(--ink);color:var(--paper)}
+  .btn.dark:hover{background:var(--bronze);border-color:var(--bronze)}
+}
+.btn:focus-visible{outline:2px solid var(--bronze);outline-offset:3px}
+
+/* ── Hero ──────────────────────────────────────────── */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;min-height:calc(100dvh - 140px);border-bottom:1px solid var(--line)}
+.hero-l{padding:90px 64px 70px 48px;display:flex;flex-direction:column;justify-content:center;position:relative}
+.hero-l .overline{display:flex;align-items:center;gap:14px;font-size:12px;font-weight:600;
+  letter-spacing:.3em;text-transform:uppercase;color:var(--bronze);margin-bottom:30px}
+.hero-l .overline::before{content:"";width:44px;height:1px;background:var(--bronze)}
+.hero-l h1{font-size:clamp(44px,5.6vw,86px);margin-bottom:28px;font-weight:500}
+.hero-l h1 em{font-style:italic;color:var(--bronze)}
+.hero-l .lead{color:var(--ink-soft);max-width:470px;margin-bottom:44px;font-weight:400;font-size:17px}
+.hero-l .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:52px}
+.hero-rate{display:flex;align-items:center;gap:18px;border-top:1px solid var(--line);padding-top:26px;max-width:470px}
+.hero-rate .num{font-family:var(--serif);font-size:44px;font-weight:600;line-height:1}
+.hero-rate .stars{display:flex;gap:2px;color:var(--bronze)}
+.hero-rate .txt{font-size:13px;color:var(--ink-soft);line-height:1.5}
+.hero-rate .txt a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--line-strong)}
+.hero-rate .txt a:hover{color:var(--bronze);border-color:var(--bronze)}
+.hero-r{position:relative;overflow:hidden;border-left:1px solid var(--line);min-height:420px}
+.hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.82) contrast(1.02)}
+.hero-r .veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(250,248,244,.22),transparent 30%)}
+.hero-r .tag{
+  position:absolute;left:26px;bottom:24px;background:var(--paper);border:1px solid var(--line);
+  padding:10px 20px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);
+}
+
+/* ── Лента брендов ─────────────────────────────────── */
+.brands{border-bottom:1px solid var(--line);padding:22px 48px;overflow:hidden}
+.brands .row{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;
+  font-family:var(--serif);font-size:17px;font-style:italic;color:var(--ink-soft);letter-spacing:.06em}
+.brands .row span{white-space:nowrap}
+.brands .row span::after{content:"·";margin-left:40px;color:var(--bronze)}
+.brands .row span:last-child::after{content:""}
+
+/* ── Общее ─────────────────────────────────────────── */
+section{padding:110px 48px;position:relative}
+.wrap{max-width:1220px;margin:0 auto}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:64px;flex-wrap:wrap}
+.sec-head .kicker{display:flex;align-items:center;gap:14px;font-size:11.5px;font-weight:600;
+  letter-spacing:.3em;text-transform:uppercase;color:var(--bronze);margin-bottom:16px}
+.sec-head .kicker::before{content:"";width:36px;height:1px;background:var(--bronze)}
+.sec-head h2{font-size:clamp(34px,4.4vw,58px)}
+.sec-head h2 em{font-style:italic;color:var(--bronze)}
+.sec-head p{color:var(--ink-soft);max-width:440px;font-size:15px}
+.reveal{opacity:0;translate:0 34px;transition:opacity .7s ease,translate .7s cubic-bezier(.3,.8,.3,1)}
+.reveal.visible{opacity:1;translate:0 0}
+
+/* ── Запись ────────────────────────────────────────── */
+#booking{border-bottom:1px solid var(--line);background:var(--paper2)}
+.bk{display:grid;grid-template-columns:1.25fr .75fr;border:1px solid var(--line);background:var(--paper)}
+.bk-l{padding:64px 56px;border-right:1px solid var(--line)}
+.bk-l .kicker{display:flex;align-items:center;gap:14px;font-size:11.5px;font-weight:600;
+  letter-spacing:.3em;text-transform:uppercase;color:var(--bronze);margin-bottom:16px}
+.bk-l .kicker::before{content:"";width:36px;height:1px;background:var(--bronze)}
+.bk-l h2{font-size:clamp(34px,4.2vw,56px);margin-bottom:18px}
+.bk-l h2 em{font-style:italic;color:var(--bronze)}
+.bk-l p{color:var(--ink-soft);max-width:470px;margin-bottom:34px}
+.bk-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
+.bk-meta{display:flex;gap:26px;flex-wrap:wrap;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.bk-meta span{display:flex;align-items:center;gap:8px}
+.bk-meta svg{color:var(--bronze)}
+.bk-r{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:56px 40px;text-align:center}
+.qr{position:relative;width:210px;padding:18px;background:#fff}
+.qr a{display:block}
+.qr img{width:100%;height:auto}
+.qr::before,.qr::after{content:"";position:absolute;width:26px;height:26px;border:1px solid var(--bronze)}
+.qr::before{top:-8px;left:-8px;border-right:none;border-bottom:none}
+.qr::after{bottom:-8px;right:-8px;border-left:none;border-top:none}
+.bk-r .cap{font-size:13px;color:var(--ink-soft);max-width:230px;line-height:1.6}
+.bk-r .cap b{display:block;font-family:var(--serif);font-size:20px;font-weight:500;color:var(--ink);margin-bottom:4px}
+
+/* ── Видео (секция появляется, когда в CONFIG.videos есть ролики) ── */
+#video{border-bottom:1px solid var(--line)}
+.vids{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.vid{position:relative;overflow:hidden;background:var(--ink);border:1px solid var(--line);aspect-ratio:9/16}
+.vid.wide{aspect-ratio:16/9;align-self:center}
+.vid video{width:100%;height:100%;object-fit:cover;display:block}
+.vid .ttl{position:absolute;left:0;right:0;bottom:0;padding:44px 18px 16px;color:var(--paper);
+  font-family:var(--serif);font-size:20px;background:linear-gradient(transparent,rgba(22,19,15,.7));pointer-events:none}
+.vid .snd{position:absolute;top:14px;right:14px;width:42px;height:42px;border:1px solid rgba(250,248,244,.6);
+  background:rgba(22,19,15,.45);color:var(--paper);cursor:pointer;display:grid;place-items:center;transition:background .2s}
+.vid .snd:hover{background:var(--ink)}
+.vid .snd:focus-visible{outline:2px solid var(--bronze);outline-offset:2px}
+
+/* ── Плашка о cookie (только когда подключена Метрика) ── */
+#cookie{position:fixed;left:20px;bottom:20px;z-index:960;max-width:420px;background:var(--paper);
+  border:1px solid var(--ink);padding:20px 22px;font-size:13px;color:var(--ink-soft);display:none;
+  box-shadow:0 18px 40px -18px rgba(22,19,15,.35)}
+#cookie.show{display:block}
+#cookie a{color:var(--ink);font-weight:600}
+#cookie .btn{margin-top:14px;padding:11px 26px}
+
+/* ── Ассортимент ───────────────────────────────────── */
+#catalog{border-bottom:1px solid var(--line)}
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}
+.cat{
+  position:relative;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:var(--paper);transition:background .3s;display:flex;flex-direction:column;
+}
+.cat:nth-child(3n){border-right:none}
+.cat:nth-child(n+4){border-bottom:none}
+.cat .ph{overflow:hidden;aspect-ratio:4/3;border-bottom:1px solid var(--line);position:relative}
+.cat .ph img{width:100%;height:100%;object-fit:cover;filter:saturate(.8);
+  transition:transform .8s cubic-bezier(.25,.8,.25,1),filter .4s}
+.cat:hover .ph img{transform:scale(1.05);filter:saturate(1)}
+.cat .num{
+  position:absolute;top:18px;left:20px;font-family:var(--serif);font-size:15px;
+  background:var(--paper);border:1px solid var(--line);width:44px;height:44px;
+  display:grid;place-items:center;color:var(--bronze);z-index:2;
+}
+.cat .body{padding:30px 30px 34px;flex:1;display:flex;flex-direction:column}
+.cat h3{font-size:26px;margin-bottom:10px}
+.cat p{font-size:14px;color:var(--ink-soft);flex:1}
+.cat .foot{margin-top:22px;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--bronze);display:flex;align-items:center;gap:10px}
+.cat .foot::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* ── Марки ─────────────────────────────────────────── */
+#marki{border-bottom:1px solid var(--line)}
+.mk-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);background:var(--paper)}
+/* subgrid — чтобы заголовки и списки в соседних колонках стояли на одной высоте */
+.mk{position:relative;padding:40px 30px 36px;border-right:1px solid var(--line);
+  display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:0;align-content:start}
+.mk:last-child{border-right:none}
+.mk .num{font-family:var(--serif);font-size:15px;color:var(--bronze);margin-bottom:14px}
+.mk h3{font-size:24px;margin-bottom:20px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.mk h3 small{display:block;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--bronze);margin-top:6px}
+.mk-list{font-family:var(--serif);font-size:19px;line-height:1.55;color:var(--ink);flex:1}
+.mk-list span{white-space:nowrap}
+.mk-list span:not(:last-child)::after{content:"\00a0· ";white-space:normal;color:var(--bronze)} /* точка не уезжает в начало строки */
+.mk-more{margin-top:18px;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft)}
+.mk-also{display:flex;flex-wrap:wrap;gap:10px 28px;align-items:baseline;margin-top:28px;font-size:14.5px;color:var(--ink-soft)}
+.mk-also b{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--bronze);font-weight:600}
+.mk-also span+span::before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;
+  background:var(--bronze-soft);margin:0 16px 2px -16px;vertical-align:middle}
+
+/* ── Цифры ─────────────────────────────────────────── */
+#numbers{background:var(--ink);color:var(--paper);border-bottom:1px solid var(--line)}
+#numbers .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+.nmb{text-align:center;position:relative;padding:10px 0}
+.nmb+.nmb::before{content:"";position:absolute;left:-20px;top:12%;height:76%;width:1px;background:rgba(250,248,244,.16)}
+.nmb .v{font-family:var(--serif);font-size:clamp(40px,4.6vw,62px);font-weight:500;line-height:1.05;font-variant-numeric:tabular-nums}
+.nmb .v span{color:var(--bronze-soft)}
+.nmb .l{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:rgba(250,248,244,.55);margin-top:10px}
+
+/* ── Отзывы ────────────────────────────────────────── */
+#reviews{border-bottom:1px solid var(--line);background:var(--paper2)}
+.rev-nav{display:flex;gap:0;border:1px solid var(--ink)}
+.rev-nav button{
+  width:56px;height:52px;border:none;background:transparent;color:var(--ink);cursor:pointer;
+  display:grid;place-items:center;transition:background .2s,color .2s;
+}
+.rev-nav button:first-child{border-right:1px solid var(--ink)}
+.rev-nav button:hover{background:var(--ink);color:var(--paper)}
+.rev-nav button:focus-visible{outline:2px solid var(--bronze);outline-offset:-4px}
+.rev-track{display:flex;gap:0;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;border:1px solid var(--line);background:var(--paper)}
+.rev-track::-webkit-scrollbar{display:none}
+.review{
+  flex:0 0 min(420px,88vw);scroll-snap-align:start;padding:44px 40px;
+  border-right:1px solid var(--line);display:flex;flex-direction:column;
+}
+.review .q{font-family:var(--serif);font-size:52px;line-height:.6;color:var(--bronze);margin-bottom:22px}
+.review p{font-size:14.5px;color:var(--ink);flex:1}
+.review .who{margin-top:26px;padding-top:18px;border-top:1px solid var(--line)}
+.review .who .n{font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.review .who .d{font-size:12px;color:var(--ink-soft);margin-top:2px}
+.review .stars{display:flex;gap:2px;color:var(--bronze);margin-top:8px}
+
+/* ── Команда ───────────────────────────────────────── */
+#team{border-bottom:1px solid var(--line)}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}
+.tm{padding:44px 40px;border-right:1px solid var(--line);position:relative}
+.tm:last-child{border-right:none}
+.tm .init{
+  width:64px;height:64px;border:1px solid var(--line-strong);border-radius:50%;
+  display:grid;place-items:center;font-family:var(--serif);font-size:26px;color:var(--bronze);
+  margin-bottom:24px;
+}
+.tm h3{font-size:24px;margin-bottom:6px}
+.tm .role{font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:18px}
+.tm p{font-size:14px;color:var(--ink-soft);font-style:italic;font-family:var(--serif);font-size:16.5px;line-height:1.6}
+
+/* ── Контакты ──────────────────────────────────────── */
+.c-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:0;border:1px solid var(--line)}
+.c-info{padding:54px 48px;border-right:1px solid var(--line);background:var(--paper)}
+.c-info h3{font-size:30px;margin-bottom:34px}
+.c-row{display:flex;gap:18px;padding:17px 0;border-top:1px solid var(--line);font-size:14.5px;align-items:flex-start}
+.c-row .ic{flex:none;color:var(--bronze);margin-top:3px}
+.c-row b{display:block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;margin-bottom:3px}
+.c-row a{color:var(--ink);text-decoration:none;font-weight:600}
+.c-row a:hover{color:var(--bronze)}
+.c-btns{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+.c-map{position:relative;min-height:480px;background:var(--paper2)}
+.c-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.5)}
+
+/* ── Футер ─────────────────────────────────────────── */
+footer{padding:40px 48px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  font-size:12px;letter-spacing:.06em;color:var(--ink-soft)}
+footer .f-brand{font-family:var(--serif);letter-spacing:.2em;text-transform:uppercase;color:var(--ink);font-weight:600}
+footer .f-brand i{text-transform:none;letter-spacing:.02em;font-weight:400;font-size:15px;color:var(--ink-soft)}
+
+/* ── Наверх ────────────────────────────────────────── */
+#to-top{
+  position:fixed;right:26px;bottom:26px;z-index:950;width:50px;height:50px;
+  border:1px solid var(--ink);background:var(--paper);color:var(--ink);cursor:pointer;
+  display:grid;place-items:center;opacity:0;visibility:hidden;transform:translateY(14px);
+  transition:all .3s;
+}
+#to-top.show{opacity:1;visibility:visible;transform:none}
+#to-top:hover{background:var(--ink);color:var(--paper)}
+#to-top:focus-visible{outline:2px solid var(--bronze);outline-offset:3px}
+
+/* ── Адаптив ───────────────────────────────────────── */
+@media(max-width:1280px){
+  nav ul{gap:22px}
+  nav ul a{letter-spacing:.12em}
+  .brand .nm{font-size:17px;letter-spacing:.14em}
+}
+@media(max-width:1120px){
+  nav ul li:nth-child(4){display:none} /* «Консультанты» — раздел и так рядом с отзывами */
+}
+@media(max-width:1060px){
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .cat:nth-child(3n){border-right:1px solid var(--line)}
+  .cat:nth-child(2n){border-right:none}
+  .cat:nth-child(n+4){border-bottom:1px solid var(--line)}
+  .cat:nth-child(n+5){border-bottom:none}
+  #numbers .wrap{grid-template-columns:repeat(2,1fr)}
+  .nmb+.nmb::before{display:none}
+  .mk-grid{grid-template-columns:repeat(2,1fr)}
+  .mk:nth-child(2n){border-right:none}
+  .mk:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .team-grid{grid-template-columns:1fr}
+  .tm{border-right:none;border-bottom:1px solid var(--line)}
+  .tm:last-child{border-bottom:none}
+}
+@media(max-width:880px){
+  .topline{padding:8px 20px}
+  .topline .tl-item:nth-child(2){display:none}
+  nav{padding:14px 20px}
+  nav ul{display:none}
+  section{padding:80px 20px}
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-l{padding:70px 20px 50px}
+  .hero-r{border-left:none;border-top:1px solid var(--line);min-height:340px}
+  .brands{padding:18px 20px}
+  .brands .row{gap:28px}
+  .brands .row span::after{margin-left:28px}
+  .cat-grid{grid-template-columns:1fr}
+  .cat{border-right:none!important;border-bottom:1px solid var(--line)!important}
+  .cat:last-child{border-bottom:none!important}
+  .mk-grid{grid-template-columns:1fr}
+  .mk{border-right:none;border-bottom:1px solid var(--line);padding:32px 24px 28px}
+  .mk:last-child{border-bottom:none}
+  .mk-list{font-size:18px}
+  .mk-also{flex-direction:column;gap:6px}
+  .mk-also span+span::before{display:none}
+  .c-grid{grid-template-columns:1fr}
+  .c-info{border-right:none;border-bottom:1px solid var(--line)}
+  footer{justify-content:center;text-align:center}
+  .bk{grid-template-columns:1fr}
+  .bk-l{padding:44px 24px;border-right:none}
+  .bk-r{display:none} /* QR на телефоне не нужен — свой экран не отсканируешь */
+  .vids{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:72%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+  .vid{scroll-snap-align:start}
+  #cookie{left:12px;right:12px;bottom:12px;max-width:none}
+  .nav-cta .btn{padding:12px 20px}
+}
+@media(max-width:600px){
+  /* узкий телефон: в верхней строке только телефон, шапка компактнее */
+  .topline{justify-content:center}
+  .topline .tl-item:first-child{display:none}
+  .hero-l .overline{letter-spacing:.13em;gap:10px} /* «10 метров от метро» — в одну строку */
+  .hero-l .overline::before{width:28px}
+  nav{padding:12px 16px;gap:12px}
+  .brand{gap:10px}
+  .brand .tri{width:28px;height:25px}
+  .brand .nm{font-size:14px;letter-spacing:.08em}
+  .brand .nm small{display:none}
+  .nav-cta .btn{padding:11px 14px;font-size:11px;letter-spacing:.12em}
+}
+
+/* ── Reduced motion ────────────────────────────────── */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;translate:0 0}
+}
+</style>
+</head>
+<body>
+
+<div class="topline">
+  <span class="tl-item">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+    Москва, Осенний бульвар, 10 · ТЦ «Бульвар», 1 этаж
+  </span>
+  <span class="tl-item">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    ежедневно 10:00–21:00
+  </span>
+  <span class="tl-item">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7a2 2 0 0 1 1.7 2.05Z"/></svg>
+    <a href="tel:+79060846171">+7 (906) 084-61-71</a>
+  </span>
+</div>
+
+<nav id="nav">
+  <a class="brand" href="#top" aria-label="Совершенный образ — на главную">
+    <svg class="tri" width="34" height="30" viewBox="0 0 34 30" fill="none" aria-hidden="true">
+      <path d="M2 2h30L17 28 2 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M11 9h12l-6 10.5L11 9Z" fill="#96742f"/>
+    </svg>
+    <span class="nm">Совершенный образ<small>парфюмерия · косметика</small></span>
+  </a>
+  <ul>
+    <li><a href="#catalog" data-nav>Ассортимент</a></li>
+    <li><a href="#booking" data-nav>Запись</a></li>
+    <li><a href="#reviews" data-nav>Отзывы</a></li>
+    <li><a href="#team" data-nav>Консультанты</a></li>
+    <li><a href="#contacts" data-nav>Контакты</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a class="btn dark" href="#booking">Записаться</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-l">
+    <div class="overline reveal">Крылатское · 10 метров от метро</div>
+    <h1 class="reveal">Всё самое лучшее<br><em>в одном месте</em></h1>
+    <p class="lead reveal">Селективная парфюмерия на розлив, корейская косметика, профессиональные краски и уход для волос. Только оригинальная продукция — с 2010-х нас советуют подругам.</p>
+    <div class="cta-row reveal">
+      <a class="btn dark" href="#booking">Записаться</a>
+      <a class="btn" href="#catalog">Смотреть ассортимент</a>
+    </div>
+    <div class="hero-rate reveal">
+      <span class="num">4,6</span>
+      <span class="stars" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8L18.2 21 12 17.4 5.8 21l1.4-6.8L2 9.4l7-.8Z"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8L18.2 21 12 17.4 5.8 21l1.4-6.8L2 9.4l7-.8Z"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8L18.2 21 12 17.4 5.8 21l1.4-6.8L2 9.4l7-.8Z"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8L18.2 21 12 17.4 5.8 21l1.4-6.8L2 9.4l7-.8Z"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8L18.2 21 12 17.4 5.8 21l1.4-6.8L2 9.4l7-.8Z"/></svg>
+      </span>
+      <span class="txt">59 оценок на <a href="https://yandex.ru/maps/-/CTByI-Ou" target="_blank" rel="noopener">Яндекс Картах</a> · 100% покупателей довольны качеством товаров</span>
+    </div>
+  </div>
+  <div class="hero-r">
+    <img src="img/hero.jpg" alt="Флаконы нишевой парфюмерии: Tom Ford, Ex Nihilo, Jul et Mad">
+    <div class="veil" aria-hidden="true"></div>
+    <span class="tag">из витрины магазина</span>
+  </div>
+</header>
+
+<!-- БРЕНДЫ: самые известные из списка Елены (25.10.2026). Полный список — в разделе #marki ниже -->
+<div class="brands" aria-label="Марки в ассортименте">
+  <div class="row">
+    <span>Amouage</span><span>Xerjoff</span><span>Creed</span><span>Kilian</span><span>Estel</span><span>Matrix</span><span>Moroccanoil</span><span>Medicube</span>
+  </div>
+</div>
+
+<section id="catalog">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal">
+        <div class="kicker">Ассортимент</div>
+        <h2>Шесть причин зайти</h2>
+      </div>
+      <p class="reveal">Небольшой магазин, в котором есть то, чего не найти в масс-маркете. Фотографии — настоящие, из торгового зала.</p>
+    </div>
+    <div class="cat-grid reveal">
+      <article class="cat">
+        <div class="ph"><span class="num">I</span><img src="img/otlivanty.jpg" alt="Отливанты нишевой парфюмерии Vilhelm Parfumerie" loading="lazy"></div>
+        <div class="body">
+          <h3>Парфюм на розлив</h3>
+          <p>Отливанты селективных ароматов — Amouage, Xerjoff, Creed, Initio, Kilian — в мини-флаконы, при вас из оригинального флакона. Удобно носить в сумочке и пробовать нишу без покупки полного объёма.</p>
+          <div class="foot">отливаем при вас</div>
+        </div>
+      </article>
+      <article class="cat">
+        <div class="ph"><span class="num">II</span><img src="img/vitrina.jpg" alt="Витрина с нишевой парфюмерией" loading="lazy"></div>
+        <div class="body">
+          <h3>Селективная парфюмерия</h3>
+          <p>Byredo, Parfums de Marly, Vilhelm Parfumerie, Ex Nihilo, HFC — ароматы, которых нет в масс-маркете. Поможем подобрать аромат под характер — или найдём ваш давний любимый.</p>
+          <div class="foot">только оригинал</div>
+        </div>
+      </article>
+      <article class="cat">
+        <div class="ph"><span class="num">III</span><img src="img/cosmetics.jpg" alt="Декоративная косметика и уход" loading="lazy"></div>
+        <div class="body">
+          <h3>Корейская косметика</h3>
+          <p>Anua, Medicube, Round Lab, Biodance, VT Cosmetics, Daeng Gi Meo Ri — уход для лица, тела и волос, маски и сыворотки. Широкий выбор, который отмечают в каждом втором отзыве.</p>
+          <div class="foot">корея · профуход</div>
+        </div>
+      </article>
+      <article class="cat">
+        <div class="ph"><span class="num">IV</span><img src="img/kraski.jpg" alt="Полки с профессиональными красками для волос" loading="lazy"></div>
+        <div class="body">
+          <h3>Краски и уход для волос</h3>
+          <p>Профессиональные краски Estel, Matrix, L'Oréal, Kapous, Kezy, Selective — подберём оттенок по палитре. И уход после окрашивания: Moroccanoil, Barex, Bouticle.</p>
+          <div class="foot">подбор по палитре</div>
+        </div>
+      </article>
+      <article class="cat">
+        <div class="ph"><span class="num">V</span><img src="img/laki.jpg" alt="Стенд с лаками для ногтей" loading="lazy"></div>
+        <div class="body">
+          <h3>Маникюр, укладка, мелочи</h3>
+          <p>Инструменты и лаки для маникюра, средства для укладки, расчёски, брашинги, бигуди и заколки — то, за чем забегают по пути. И готовые идеи подарков.</p>
+          <div class="foot">идеи для подарков</div>
+        </div>
+      </article>
+      <article class="cat">
+        <div class="ph"><span class="num">VI</span><img src="img/exterior.jpg" alt="Вход в ТЦ «Бульвар»" loading="lazy"></div>
+        <div class="body">
+          <h3>Рядом с метро</h3>
+          <p>ТЦ «Бульвар», первый этаж — десять метров от метро Крылатское. Забегайте по дороге домой: консультация занимает пять минут, а настроение поднимает на весь день.</p>
+          <div class="foot">крылатское · 10 м</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- МАРКИ: список от Елены (25.10.2026). Порядок внутри раздела — как у неё -->
+<section id="marki">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal">
+        <div class="kicker">Марки</div>
+        <h2>Что стоит <em>на полках</em></h2>
+      </div>
+      <p class="reveal">И это не всё: если не нашли свою марку — спросите в Telegram или по телефону, подскажем, есть ли она в наличии.</p>
+    </div>
+    <div class="mk-grid reveal">
+      <div class="mk">
+        <span class="num">I</span>
+        <h3>Селективная парфюмерия <small>отливанты</small></h3>
+        <p class="mk-list"><span>Amouage</span><span>Xerjoff</span><span>Parfums de Marly</span><span>Initio</span><span>Byredo</span><span>Zarkoperfume</span><span>Creed</span><span>Vilhelm Parfumerie</span><span>Kilian</span><span>Serge Dumonten</span><span>Osmassino</span><span>HFC</span><span>Ex Nihilo</span></p>
+        <div class="mk-more">и многие другие</div>
+      </div>
+      <div class="mk">
+        <span class="num">II</span>
+        <h3>Уход за волосами</h3>
+        <p class="mk-list"><span>Mocheqi</span><span>Olorchee</span><span>Barex</span><span>Estel</span><span>Hadat</span><span>Rituels de la Sultane</span><span>Arym-A</span><span>Bouticle</span><span>Kapous</span><span>Selective</span><span>TEFIA</span><span>Consept</span><span>Kezy</span><span>Olin</span><span>Moroccanoil</span></p>
+        <div class="mk-more">и другие</div>
+      </div>
+      <div class="mk">
+        <span class="num">III</span>
+        <h3>Профессиональные краски</h3>
+        <p class="mk-list"><span>Estel</span><span>Kapous</span><span>Farma Vita</span><span>Bouticle</span><span>Olin</span><span>L'Oréal</span><span>Matrix</span><span>JMaki</span><span>TEFIA</span><span>Demax</span><span>Selective</span><span>Compagnia del Colore</span><span>Kezy</span><span>Ecos Line</span></p>
+      </div>
+      <div class="mk">
+        <span class="num">IV</span>
+        <h3>Корейская косметика</h3>
+        <p class="mk-list"><span>Daeng Gi Meo Ri</span><span>Anua</span><span>Dr. Bio</span><span>Dr. Althea</span><span>Medi-Peel</span><span>FarmStay</span><span>VT Cosmetics</span><span>Jigott</span><span>Centellian24</span><span>Medicube</span><span>Celimax</span><span>Round Lab</span><span>Biodance</span></p>
+        <div class="mk-more">и другие</div>
+      </div>
+    </div>
+    <div class="mk-also reveal">
+      <b>А ещё</b>
+      <span>укладка для волос</span>
+      <span>всё для маникюра — инструменты и лаки</span>
+      <span>аксессуары — расчёски, брашинги, бигуди, заколки</span>
+    </div>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="wrap">
+    <div class="bk reveal">
+      <div class="bk-l">
+        <div class="kicker">Запись</div>
+        <h2>Приходите в <em>удобное</em> время</h2>
+        <p id="bk-text">Позвоните нам — подберём удобное время, чтобы спокойно, без спешки выбрать аромат, уход или краску для волос.</p>
+        <div class="bk-btns" id="bk-btns">
+          <a class="btn dark" href="tel:+79060846171" data-goal="call">Позвонить</a>
+          <a class="btn" href="https://yandex.ru/maps/-/CTByI-Ou" target="_blank" rel="noopener">Построить маршрут</a>
+        </div>
+        <div class="bk-meta">
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>ежедневно 10:00–21:00</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>ТЦ «Бульвар», 1 этаж</span>
+        </div>
+      </div>
+      <div class="bk-r">
+        <div class="qr"><a href="https://t.me/nicha_parfums" target="_blank" rel="noopener" id="qr-link"><img src="img/qr-channel.svg" alt="QR-код Telegram-канала магазина" width="250" height="250"></a></div>
+        <div class="cap" id="bk-cap"><b>Наведите камеру телефона</b>и сразу позвоните нам</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="video" hidden>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal">
+        <div class="kicker">Видео</div>
+        <h2>Загляните к нам</h2>
+      </div>
+      <p class="reveal">Несколько коротких роликов из магазина.</p>
+    </div>
+    <div class="vids reveal" id="vids"></div>
+  </div>
+</section>
+
+<section id="numbers">
+  <div class="wrap">
+    <div class="nmb reveal"><div class="v"><span data-count="46" data-fmt="rate">0</span></div><div class="l">рейтинг на Яндекс Картах</div></div>
+    <div class="nmb reveal"><div class="v"><span data-count="59">0</span></div><div class="l">оценок покупателей</div></div>
+    <div class="nmb reveal"><div class="v"><span data-count="100">0</span><span>%</span></div><div class="l">довольны качеством товаров</div></div>
+    <div class="nmb reveal"><div class="v"><span data-count="10">0</span><span>+</span></div><div class="l">лет с постоянными клиентами</div></div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal">
+        <div class="kicker">Отзывы</div>
+        <h2>Нас советуют подругам</h2>
+      </div>
+      <div class="rev-nav reveal">
+        <button id="rv-prev" aria-label="Предыдущие отзывы"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m15 18-6-6 6-6"/></svg></button>
+        <button id="rv-next" aria-label="Следующие отзывы"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m9 18 6-6-6-6"/></svg></button>
+      </div>
+    </div>
+    <div class="rev-track reveal" id="rv-track" tabindex="0" aria-label="Карусель отзывов"></div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal">
+        <div class="kicker">Консультанты</div>
+        <h2>Вас здесь помнят</h2>
+      </div>
+      <p class="reveal">92% отзывов о персонале — положительные. Девушек называют по именам и приходят «к своим» годами.</p>
+    </div>
+    <div class="team-grid reveal">
+      <div class="tm">
+        <div class="init">А</div>
+        <h3>Алла</h3>
+        <div class="role">консультант по парфюмерии</div>
+        <p>«Отлично знает ассортимент, внимательна к каждому клиенту. Посоветовала хорошие духи в подарок для моей супруги!»</p>
+      </div>
+      <div class="tm">
+        <div class="init">К</div>
+        <h3>Кира</h3>
+        <div class="role">консультант по парфюмерии</div>
+        <p>«Очень грамотная девушка: всё рассказала про парфюм — узнал много нового. Помогла с выбором теперь уже любимого аромата».</p>
+      </div>
+      <div class="tm">
+        <div class="init">Л</div>
+        <h3>Лена</h3>
+        <div class="role">консультант по косметике</div>
+        <p>«Качественная косметика и духи, моя семья всегда обращается к Лене — очень любим!»</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacts">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal">
+        <div class="kicker">Контакты</div>
+        <h2>Как нас найти</h2>
+      </div>
+    </div>
+    <div class="c-grid reveal">
+      <div class="c-info">
+        <h3>Совершенный образ</h3>
+        <div class="c-row">
+          <span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span><b>Адрес</b>Москва, Осенний бульвар, 10 — ТЦ «Бульвар», 1 этаж</span>
+        </div>
+        <div class="c-row">
+          <span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 15h16M4 9h16M9 3 7 21M17 3l-2 18"/></svg></span>
+          <span><b>Метро</b>Крылатское — 10 метров от выхода</span>
+        </div>
+        <div class="c-row">
+          <span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7a2 2 0 0 1 1.7 2.05Z"/></svg></span>
+          <span><b>Телефон</b><a href="tel:+79060846171">+7 (906) 084-61-71</a></span>
+        </div>
+        <div class="c-row">
+          <span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+          <span><b>Время работы</b>ежедневно с 10:00 до 21:00</span>
+        </div>
+        <div class="c-btns">
+          <a class="btn dark" href="tel:+79060846171">Позвонить</a>
+          <a class="btn" href="https://yandex.ru/maps/-/CTByI-Ou" target="_blank" rel="noopener">Открыть на карте</a>
+        </div>
+      </div>
+      <div class="c-map">
+        <iframe title="Карта: Осенний бульвар, 10, Москва"
+          src="https://yandex.ru/map-widget/v1/?text=%D0%9E%D1%81%D0%B5%D0%BD%D0%BD%D0%B8%D0%B9%20%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80%2C%2010%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&z=16"
+          loading="lazy" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="f-brand">Совершенный образ <i>— всё самое лучшее в одном месте</i></span>
+  <span>Осенний бульвар, 10 · ТЦ «Бульвар» · ежедневно 10:00–21:00</span>
+  <span><a href="tel:+79060846171" style="color:inherit;text-decoration:none">+7 (906) 084-61-71</a><span id="policy-link"></span></span>
+</footer>
+
+<div id="cookie" role="dialog" aria-label="Уведомление о cookie">
+  Мы используем cookie и сервис Яндекс Метрика, чтобы понимать, как посетители пользуются сайтом.
+  Подробнее — в <a href="politika.html">политике конфиденциальности</a>.
+  <div><button class="btn dark" id="cookie-ok" type="button">Понятно</button></div>
+</div>
+
+<button id="to-top" aria-label="Наверх"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 15V3M3 9l6-6 6 6" transform="translate(3 3)"/></svg></button>
+
+<script>
+/* ══════════ НАСТРОЙКИ — заполнить, когда Елена пришлёт данные ══════════ */
+const CONFIG={
+  // Ссылка на запись по времени — Telegram-бот магазина (?start=book сразу открывает запись).
+  booking:'https://t.me/sovershenniy_obraz_bot?start=book',
+  // Telegram-канал магазина — на него ведёт QR-код в блоке «Запись».
+  // ВАЖНО: при смене ссылки перегенерировать img/qr-channel.svg (QR сам не обновится).
+  channel:'https://t.me/nicha_parfums',
+  // Номер счётчика Яндекс Метрики (только цифры). Пока пусто — Метрики и плашки о cookie нет.
+  // Цели в Метрике создать типа «JavaScript-событие»: booking (нажали «Записаться»), call (нажали на телефон).
+  metrika:'',
+  // Видео: файлы положить в папку video/. Пока список пуст — раздел скрыт.
+  // Пример: {src:'video/1.mp4', poster:'video/1.jpg', title:'Наша витрина', vertical:true}
+  videos:[],
+};
+/* ═══════════════════════════════════════════════════════════════════════ */
+
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* запись: если есть ссылка — кнопка ведёт на неё, иначе остаётся звонок */
+if(CONFIG.booking){
+  document.getElementById('bk-text').textContent='Выберите день и время в нашем Telegram-боте — он напомнит о визите накануне. Без очереди и спешки: спокойно подберём аромат, уход или краску для волос.';
+  document.getElementById('bk-btns').innerHTML=
+    `<a class="btn dark" href="${CONFIG.booking}" target="_blank" rel="noopener" data-goal="booking">Записаться в Telegram</a>
+     <a class="btn" href="tel:+79060846171" data-goal="call">Позвонить</a>`;
+}
+/* QR ведёт в Telegram-канал */
+if(CONFIG.channel){
+  document.getElementById('qr-link').href=CONFIG.channel;
+  document.getElementById('bk-cap').innerHTML='<b>Наведите камеру телефона</b>и откроется наш Telegram-канал — новинки и наличие';
+}
+
+/* видео */
+if(CONFIG.videos.length){
+  const box=document.getElementById('vids');
+  const mute='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="m22 9-6 6m0-6 6 6"/></svg>';
+  const sound='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>';
+  box.innerHTML=CONFIG.videos.map(v=>`
+    <figure class="vid${v.vertical===false?' wide':''}">
+      <video src="${v.src}"${v.poster?` poster="${v.poster}"`:''} muted loop playsinline preload="metadata"></video>
+      ${v.title?`<figcaption class="ttl">${v.title}</figcaption>`:''}
+      <button class="snd" type="button" aria-label="Включить звук">${mute}</button>
+    </figure>`).join('');
+  box.querySelectorAll('.vid').forEach(f=>{
+    const vd=f.querySelector('video'),b=f.querySelector('.snd');
+    b.addEventListener('click',()=>{
+      vd.muted=!vd.muted;b.innerHTML=vd.muted?mute:sound;
+      b.setAttribute('aria-label',vd.muted?'Включить звук':'Выключить звук');
+      if(!vd.muted)vd.play().catch(()=>{});
+    });
+  });
+  // играют только видимые ролики — бережём батарею и трафик
+  const vo=new IntersectionObserver(es=>es.forEach(e=>{
+    const vd=e.target;
+    if(e.isIntersecting&&!reduced)vd.play().catch(()=>{});else vd.pause();
+  }),{threshold:.4});
+  box.querySelectorAll('video').forEach(v=>vo.observe(v));
+  document.getElementById('video').hidden=false;
+}
+
+/* Яндекс Метрика + плашка о cookie + ссылка на политику */
+if(CONFIG.metrika){
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();
+    for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r)return;}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window,document,'script','https://mc.yandex.ru/metrika/tag.js','ym');
+  ym(+CONFIG.metrika,'init',{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
+  document.addEventListener('click',e=>{
+    const a=e.target.closest('a');if(!a)return;
+    if(a.dataset.goal==='booking')ym(+CONFIG.metrika,'reachGoal','booking');
+    else if(a.href.startsWith('tel:'))ym(+CONFIG.metrika,'reachGoal','call');
+  });
+  const ck=document.getElementById('cookie');
+  let seen=false;try{seen=localStorage.getItem('cookie-ok')==='1'}catch(e){}
+  if(!seen)ck.classList.add('show');
+  document.getElementById('cookie-ok').addEventListener('click',()=>{
+    ck.classList.remove('show');try{localStorage.setItem('cookie-ok','1')}catch(e){}
+  });
+  document.getElementById('policy-link').innerHTML=' · <a href="politika.html" style="color:inherit">Политика конфиденциальности</a>';
+}
+
+/* навигация + наверх */
+const nav=document.getElementById('nav');
+const toTop=document.getElementById('to-top');
+addEventListener('scroll',()=>{
+  nav.classList.toggle('scrolled',scrollY>60);
+  toTop.classList.toggle('show',scrollY>600);
+},{passive:true});
+toTop.addEventListener('click',()=>scrollTo({top:0,behavior:reduced?'auto':'smooth'}));
+
+/* появление */
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}});
+},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+/* страховка: если IntersectionObserver не сработал — показываем всё, что уже на экране */
+function safetyReveal(){document.querySelectorAll('.reveal:not(.visible)').forEach(el=>{if(el.getBoundingClientRect().top<innerHeight*1.05)el.classList.add('visible')})}
+addEventListener('scroll',safetyReveal,{passive:true});
+addEventListener('load',()=>setTimeout(safetyReveal,1000));
+setTimeout(safetyReveal,2200);
+
+/* активный пункт */
+const navLinks=[...document.querySelectorAll('[data-nav]')];
+const so=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting)navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))});
+},{rootMargin:'-35% 0px -60% 0px'});
+['catalog','booking','reviews','team','contacts'].forEach(id=>so.observe(document.getElementById(id)));
+
+/* счётчики (рейтинг 4,6 хранится как 46) */
+const cnt=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting)return;cnt.unobserve(e.target);
+    const el=e.target,t=+el.dataset.count,rate=el.dataset.fmt==='rate';
+    const show=v=>el.textContent=rate?(v/10).toFixed(1).replace('.',','):String(v);
+    if(reduced){show(t);return}
+    const t0=performance.now();
+    (function tick(now){
+      const p=Math.min((now-t0)/1400,1);
+      show(Math.round(t*(1-Math.pow(1-p,3))));
+      if(p<1)requestAnimationFrame(tick);
+    })(t0);
+  });
+},{threshold:.4});
+document.querySelectorAll('[data-count]').forEach(el=>cnt.observe(el));
+
+/* отзывы */
+const REVIEWS=[
+  ['Ольга А.','январь 2025','Очень классный магазин, где в наличии есть корейская косметика и парфюм на розлив — качественный, стойкий. Однозначно рекомендую к посещению!'],
+  ['Кира Кузнецкая','июль 2023','10 лет являюсь постоянной клиенткой. Всегда выручают с выбором профессиональной краски для волос, уходовые линейки очень широко представлены. А за возможность купить нишевую парфюмерию в распив — отдельное спасибо!'],
+  ['Юлия Фролова','ноябрь 2023','Приезжаю сюда постоянно, хоть и живу в другом районе. Фишка магазина — отливанты селективных духов. Купила Молекулу 01 (оригинал) и Килиан. Очень удобно носить в сумочке. Всегда ухожу с хорошим настроением!'],
+  ['Татьяна З.','июль 2023','Удобное расположение, хороший ассортимент проф. косметики для волос и много-много сногсшибательных ароматов — отливают при тебе в мини-флаконы. Оригинал точно!'],
+  ['Мария Х.','февраль 2023','Можно брать духи на распив, корейская косметика, профессиональные шампуни, хорошие краски для волос. Продавец всегда подскажет. Ухожу всегда с приятным ощущением от обслуживания.'],
+  ['Наталья Молодцова','август 2023','Очень удобно — ТЦ рядом с метро Крылатское. Широкий ассортимент качественных профессиональных шампуней, красок для волос, косметики. Часто забегаю купить что-нибудь себе или в подарок.'],
+  ['Анна Родькина','июль 2023','Отличный ассортимент, всегда ухожу с покупками! Приобрести что-нибудь для себя или на подарок — это магазин, который нужен. Кира помогла выбрать теперь уже любимый парфюм!'],
+  ['Сергей Я.','август 2023','Хороший магазин, большой выбор! Алла посоветовала хорошие духи в подарок для моей супруги. Всем советую!'],
+  ['Эвита Перон','сентябрь 2023','Хожу регулярно за отливантами нишевой парфюмерии. Парфюм оригинал, всегда очень довольна покупками. Рекомендую любителям ароматов.'],
+  ['Кирилл С.','сентябрь 2023','Заходил выбрать подарок для жены. Широкий ассортимент парфюмерии и косметики, крайне вежливые и любезные консультанты. Рекомендую!'],
+  ['Юлия К.','ноябрь 2023','Открыла для себя чудесный магазин, теперь частенько захожу себя порадовать. Что особенно радует — здесь только оригинальная продукция.'],
+  ['Олеся Ванина','сентябрь 2023','Консультанты — большие профессионалы своего дела. Маска, шампунь и ампулы от выпадения волос очень помогли. Спасибо!'],
+];
+const star='<svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .8-5.2 4.8L18.2 21 12 17.4 5.8 21l1.4-6.8L2 9.4l7-.8Z"/></svg>';
+const track=document.getElementById('rv-track');
+track.innerHTML=REVIEWS.map(r=>`
+  <article class="review">
+    <div class="q" aria-hidden="true">&ldquo;</div>
+    <p>${r[2]}</p>
+    <div class="who">
+      <div class="n">${r[0]}</div>
+      <div class="d">${r[1]} · Яндекс Карты</div>
+      <div class="stars" aria-label="Оценка 5 из 5">${star.repeat(5)}</div>
+    </div>
+  </article>`).join('');
+const step=()=>Math.min(422,track.clientWidth*.9);
+document.getElementById('rv-prev').addEventListener('click',()=>track.scrollBy({left:-step(),behavior:reduced?'auto':'smooth'}));
+document.getElementById('rv-next').addEventListener('click',()=>track.scrollBy({left:step(),behavior:reduced?'auto':'smooth'}));
+</script>
+</body>
+</html>
